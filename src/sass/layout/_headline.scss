@@ -1,0 +1,36 @@
+.headline {
+	&-title {
+		@include textProperties(36px, var(--clSecondary), inherit, 600, 1px, capitalize);
+		padding-bottom: 40px;
+		transition: all .4s linear;
+	}
+	&-para {
+		@include textProperties(20px, var(--clSecondary), inherit, 500, 0.6px, none);
+		line-height: 1.6;
+		transition: all .4s linear;
+	}
+	@media screen and(max-width:992px) {
+		&-title {
+			font-size: 32px;
+		}
+		&-para {
+			font-size: 16px;
+		}
+	}
+	@media screen and(max-width:768px) {
+		&-title {
+			font-size: 24px;
+		}
+		&-para {
+			font-size: 13px;
+		}
+	}
+	@media screen and(max-width:576px) {
+		&-title {
+			font-size: 16px;
+		}
+		&-para {
+			font-size: 12px;
+		}
+	}
+}

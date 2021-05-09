@@ -1,0 +1,12 @@
+$clPrimary :#ff9a9e;
+$clSecondary: #fff;
+$ffPrimary: 'Roboto', sans-serif;;
+:root {
+	--clPrimary: #ff9a9e;
+	--clPrimaryBold: #ff7177;
+	--clSecondary: #fff;
+	--headerBg: #fff;
+	--homeBg: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	--aboutBg: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+	--contactBg: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}

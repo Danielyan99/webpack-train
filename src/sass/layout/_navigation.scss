@@ -1,0 +1,46 @@
+.nav {
+	display: flex;
+	align-items: center;
+	&-link {
+		margin-right: 130px;
+		transition: all .4s;
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			@include textProperties(24px, var(--clPrimary), inherit, 500, 1px, capitalize);
+			transition: all .4s;
+			&.active {
+				color: var(--clPrimaryBold);
+			}
+		}
+		&:hover {
+			transform: rotate(15deg);
+			a {
+				color: var(--clPrimaryBold);
+			}
+		}
+	}
+	@media screen and(max-width:992px) {
+		&-link {
+			margin-right: 60px;
+			a {
+				font-size: 20px;
+			}
+			&:hover {
+				transform: rotate(10deg);
+			}
+		}
+	}
+	@media screen and(max-width:768px) {
+		&-link {
+			margin-right: 40px;
+			a {
+				font-size: 16px;
+			}
+		}
+	}
+	@media screen and(max-width:576px) {
+		margin-top: 30px;
+	}
+}

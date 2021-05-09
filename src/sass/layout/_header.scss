@@ -1,0 +1,14 @@
+.header {
+	background-image: var(--headerBg);
+	transition: all .4s linear;
+	&-inner {
+	height: 120px;
+		@include flexTool(center, space-between, row);
+	}
+	@media screen and (max-width: 576px) {
+		&-inner {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}

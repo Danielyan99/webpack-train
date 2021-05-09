@@ -1,0 +1,34 @@
+@mixin container ($mw) {
+  max-width: $mw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@mixin flexTool ($items, $content , $direction) {
+  display: flex;
+  align-items: $items;
+  justify-content: $content;
+  flex-direction: $direction;
+}
+@mixin textProperties ($fz, $c, $ff, $fw, $ls, $tt) {
+  font-size: $fz;
+  color: $c;
+  font-weight: $fw;
+  font-family: $ff;
+  letter-spacing: $ls;
+  text-transform: $tt;
+}
+@mixin sizingProperties ($w, $h, $bc, $br) {
+  width: $w;
+  height: $h;
+  background-color: $bc;
+  border-radius: $br;
+}
+@mixin positionProperties ($p, $t, $r, $b, $l, $zi) {
+  position: $p;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+  z-index: $zi;
+}

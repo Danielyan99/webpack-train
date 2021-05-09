@@ -1,0 +1,5 @@
+.main {
+	height: calc(100% - 120px);
+	@include flexTool(unset, center, column);
+	position: relative;
+}
